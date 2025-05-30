@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    padding: 25px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: lightgray;
+    font-size: clamp(1rem, 20px, 4rem);
+}
+
+.about > .picture-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about > .picture-wrapper > .picture-text {
+    position: absolute;
+    bottom: 3%;
+    font-size: 3vw;
+    color: #ff9900;
+}
+
+.about > .picture-wrapper > .profile {
+    width: 100%;
+    min-width: 150px;
+    max-width: 750px;
+    height: auto;
+}
+
+.about > .about-text h1 {
+    margin-bottom: 5px;
+}
+
+.about > .about-text {
+    background-color: salmon;
+    max-width: 70ch;
+    padding: 20px 15px 5px;
+}
+
+.about-text > .socials {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.about-text > .socials > .about-icon {
+    margin-top: 25px;
+    max-width: 30px;
+}
