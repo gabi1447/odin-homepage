@@ -6,9 +6,9 @@
 
 body {
     width: 100vw;
-    height: auto;
-    padding: 25px 30px;
+    padding-top: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* ABOUT SECTION */
@@ -19,7 +19,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: lightgray;
     font-size: clamp(1rem, 20px, 4rem);
 }
 
@@ -48,7 +47,6 @@ body {
 }
 
 .about > .about-text {
-    background-color: salmon;
     max-width: 70ch;
     padding: 20px 15px 5px;
 }
@@ -63,4 +61,120 @@ body {
 .about-text > .socials > .about-icon {
     margin-top: 25px;
     max-width: 30px;
+}
+
+/* MAIN WORKS SECTION */
+
+.works {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-top: 150px;
+}
+
+.works > .project {
+    min-width: 250px;
+    max-width: 325px;
+    place-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.works > .project > .project-screenshot {
+    font-size: clamp(20px, 2vw, 25px);
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    background-color: pink;
+}
+
+.project-title {
+    width: 100%;
+    display: flex;
+
+    padding: 5px 10px;
+}
+
+.project-title > h3 {
+    min-width: 15ch;
+    font-size: 20px;
+}
+
+.project-links {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+
+.project-icon {
+    min-width: 10px;
+    max-width: 20px;
+}
+
+.project-info {
+    padding: 20px 15px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 125px;
+    background-color: #7070db;
+    padding: 30px 0px;
+    color: white;
+}
+
+.contact-info {
+    max-width: 35ch;
+}
+
+.contact-info > h2 {
+    font-size: 45px;
+}
+
+.contact-info > h2,
+.footer-msg,
+.address,
+.phone {
+    margin-bottom: 15px;
+}
+
+.footer-pic {
+    max-width: 350px;
+}
+
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    min-width: 10px;
+    max-width: 20px;
+}
+
+.footer-socials {
+    margin-top: 40px;
+}
+
+.footer-social-icon {
+    min-width: 30px;
+    max-width: 40px;
+}
+
+/* COMMON STYLES */
+.about,
+.works,
+.footer {
+    padding-right: 30px;
+    padding-left: 30px;
 }
